@@ -6,6 +6,7 @@ body{
 .p-home{
 	background-clip: border-box;
 	background-color: #343a40;
+	background-image: linear-gradient(black, white, gold);
 }
 
 .p-header-inner{
