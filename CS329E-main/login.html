@@ -36,29 +36,47 @@
             </ul>
         </div>
 
-        <br>
+        <div class = "register">
+            <h3>Registration</h3>
+            <table>
+                <form method="POST" action = ""> 
 
-        <div class = "about"> 
-          <p class = "content-header">About Us:</p>
-          <p>AUSTINITE! is a website for visitors and locals alike. Users will be able to learn about upcoming events in Austin, new places to explore, and tasty foods to try! Additionally, users can blog about their experiences and offer suggestions to the website.</p>    
+                    <tr>
+                         <td>
+                            <label>Username: </label>
+                         </td>
 
-          <p class = 'content-header'>Featured Event:</p>
-          <img src ="images/featured.png" class = "center">
+                         <td>
+                            <input name = "username" type = "text" id = "username" size = "30" placeholder="Enter username" />
+                         </td>
+                    </tr> 
 
-        </div>
-          
+                    
 
-        <!--footer layer-->
-        <div class = "p-footer-inner">
-            <!--create a footer-->
-            <footer class = "p-footer">
-                <p>Authors: Group 14<br>
-                <p>March 28, 2022</p>
-            </footer>
+                    <tr>
+                         <td>
+                            <label>Password: </label>
+                         </td>
+
+                         <td>
+                            <input name = "password" type = "text" id = "password" size = "30" placeholder="Enter password" />
+                         </td>
+                    </tr> 
+
+                    <tr>
+                    <td>
+                      <button type="button" onclick="login()">Log In</button> 
+                      <input type="reset" value="Clear"><br/> 
+                    </td>
+                </tr>
+                </form>  
+            </table>
+            <a href="register.html">Don't have account? Register here!</a>
         </div>
 
     </div>
 
+    </div>
 </body>
 
 </html>
