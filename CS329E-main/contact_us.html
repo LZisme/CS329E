@@ -16,7 +16,7 @@
             <header class = "p-header">
                 <!--display logo so that automatically back to homepage when click-->
                 <a href="index.html">
-                    <img src ="images/logo.png" width="200" height="100">
+                    <img src ="images/logo.jpg" width="200" height="100">
                 </a>
             </header>
 
@@ -24,82 +24,73 @@
 
         <!--navigation bar-->
         <div class = "navigation-bar">
-            <ul>
-                <li><a class = "active" href = "#home">Homepage</a></li>
-                <li><a href="upcoming_events.html">Upcoming Events</a></li>
-                <li><a href="blank.html">Things To Do</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="suggestions.html">Sugestions</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-                <li style="float:right"><a href="login.html">Log In</a></li>
-                <li style="float:right"><a href="register.html">Register</a></li>
-            </ul>
+            <a href = "index.html"> Homepage </a>
+            <a href="#event">Upcoming Events</a>
+            <a href="#todo">Things To Do</a>
+            <a href="#blog">Blog</a>
+            <a href="#suggestions">Sugestions</a>
+            <a class = "active" href="contact_us.html">Contact Us</a>
+
+            <div class="account">
+                <a href="#account">Account</a>
+                <a href="#notification">Notification</a>
+            </div>
         </div>
 
         <div class = "contactus">
-            <h2 style="text-align:center">Our Team</h2>
-            <div class="row">
-                <div class="column">
-                <div class="card">
-                  <img src="images/profile1.jpg" alt="Javier" style="width:100%">
-                  <div class="container">
-                    <h2>Van Vo</h2>
-                    <p class="phone">467-773-xxxx</p>
-                    <p>Van Vo is interested in games and robotics! He wants to share with everybody about the lastest news about games. He's also in a robotics arm building project.</p>
-                    <p><a href="mailto: vtv253@utexas.edu">Van T. Vo</a></p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="images/profile1.jpg" alt="Javier" style="width:100%">
-                  <div class="container">
-                    <h2>Javier Ramirez II</h2>
-                    <p class="phone">512-791-xxxx</p>
-                    <p>Javier was born and raised in South Austin. He is super interested in web development and wants to share his knowledge about Austin.</p>
-                    <p><a href="mailto: javier.ramirez5@utexas.edu">Javier Ramirez II</a></p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="column">
-                <div class="card">
-                  <img src="images/profile1.jpg" alt="Yousuf" style="width:100%">
-                  <div class="container">
-                    <h2>Yousuf Din</h2>
-                    <p class="phone">512-925-xxxx</p>
-                    <p>Yousuf was born and raised in Austin! He knows a lot about the area, including things to do, places to eat, and attractions to see!</p>
-                    <p><a href = "mailto: yousuf.din@utexas.edu">Yousuf Din</a></p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
+            <div class = "contact-content">
+                <h2>If you have any problem, please contact us as:</h2>
+                <table>
+                    <tr>
+                        <!--Person1-->
+                        <td>
+                            <img src="images/profile1.jpg" width="200" height="200">
+                            <p><a href="mailto: vtv253@utexas.edu">Van T. Vo</a></p>
+                            <p>Tel: 469-773-xxxx</p>
+                            <p>Van Vo is interested in games and robotics! He wants to share with everybody about the lastest news about games. He's also in a robotics arm building project</p>
+                        </td>
 
-              <div class="column">
-                <div class="card">
-                  <img src="images/profile1.jpg" alt="Amelia" style="width:100%">
-                  <div class="container">
-                    <h2>Amelia Liang</h2>
-                    <p class="phone">832-212-xxxx</p>
-                    <p>Amy is interested in game development, and she is near completion with her visual novel, Demons and Sorceress.</p>
-                    <p><a href = "mailto: dliang0504@utexas.edu">Amelia Liang</a></p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-        </div>
+                        <!--Person2-->
+                        <td>
+                            <img src="images/profile1.jpg" width="200" height="200">
+                            <p><a href="mailto: javier.ramirez5@utexas.edu">Javier Ramirez II</a></p>
+                            <p>Tel: 512-791-xxxx</p>
+			    <p>Javier was born and raised in South Austin. He is super interested in web development and wants to share his knowledge about Austin.</p>
+                        </td>
+
+                        <!--Person3-->
+                        <td>
+                            <img src="images/profile1.jpg" width="200" height="200">
+			                <p> <a href = "mailto: yousuf.din@utexas.edu">Yousuf Din</a></p>
+			                <p>Tel: 512-925-xxxx</p>
+                            <p>Yousuf was born and raised in Austin! He knows a lot about the area, including things to do, places to eat, and attractions to see!</p>
+                        </td>
+
+                        <!--Person4-->
+                        <td>
+                            <img src="images/profile1.jpg" width="200" height="200">
+                            <p> <a href = "mailto: dliang0504@utexas.edu">Amelia Liang</a></p>
+			                <p>Tel: 832-212-xxxx</p>
+                            <p>Amy is interested in game development, and she is near completion with her visual novel, Demons and Sorceress.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>  
 
         <!--footer layer-->
         <div class = "p-footer-inner">
             <!--create a footer-->
             <footer class = "p-footer">
-                <p>Author: Group 14<br>
-                <p>March 28, 2022</p>
+                <br><center>AUSTINITE</center>
+                <br><center>Website by Group 14</center>
+                <br><center>March 03rd, 2022</center>
+
+                <a href = "#home">Homepage</a>
+
             </footer>
         </div>
+
     </div>
 
 </body>
