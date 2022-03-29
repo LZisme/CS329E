@@ -94,6 +94,10 @@ body{
 	font-size: 20px;
 
 }
+.p-footer{
+	text-align: center;
+	border: 3px solid red;
+}
 
 .contact-content a{
 	display: inline-block;
