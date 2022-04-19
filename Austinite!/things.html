@@ -8,10 +8,10 @@
     <style>
         * {
             box-sizing: border-box;
-        }        
+        }
 
         /* Formating the buttons and links */
-     .button {
+        .button {
             border: none;
             outline: 0;
             display: inline-block;
@@ -22,21 +22,21 @@
             font-size: 30px;
             cursor: pointer;
             width: 100%;
-            }
-        
-        .button:hover {
-          	background-color: #555;
-            }
+        }
 
-      /*   Splitting it into three     */
+        .button:hover {
+            background-color: #555;
+        }
+
+        /*   Splitting it into three     */
         .column {
             float: left;
             width: 33%;
             margin-bottom: 16px;
             padding: 0 8px;
-            }
-        
-      /* Images  */
+        }
+
+        /* Images  */
         .imgs {
             background-color: #aaa;
             width: 100%;
@@ -48,12 +48,12 @@
         .cards {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             margin: 0px;
-            background-color:#C5CBE3;
-          }
+            background-color: #C5CBE3;
+        }
 
         /* Clear floats after the columns */
         .row {
-          margin-top: 1%;
+            margin-top: 1%;
         }
 
         /* Footer */
@@ -63,7 +63,7 @@
             background: #ddd;
             margin-top: 20px;
         }
-        
+
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 800px) {
 
@@ -96,40 +96,40 @@
                 <ul>
                     <li><a href="index.html">Homepage</a></li>
                     <li><a href="upcoming_events.html">Upcoming Events</a></li>
-                    <li><a class="active" href="blank.html">Things To Do</a></li>
+                    <li><a class="active" href="things.html">Things To Do</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="suggestions.html">Sugestions</a></li>
                     <li><a href="contact_us.html">Contact Us</a></li>
-                    <li style="float:right"><a href="#account">Account</a></li>
-                    <li style="float:right"><a href="#notification">Notification</a></li>
+                    <li style="float:right"><a href="login.php">Login</a></li>
+                    <li style="float:right"><a href="register.php">Register</a></li>
                 </ul>
             </div>
 
             <div class="header">
                 <h2>Things To Do </h2>
             </div>
-            
-          <div class="row">
-                    <div class="column">
-                        <img class = 'imgs' src="images/calen.jpg" style="width:100%">
-                        <a href="blank.html"<button  class="button">Calender</button></a>
-                    </div>
-    
-                    <div class="column">
-                        <img class = 'imgs' src="images/food.jpg" style="width:100%">
-                        <a href="blank.html"<button class="button">Food</button></a>
 
-                    </div>
-    
-                    <div class="column">
-                        <img class = 'imgs' src="images/camp.jpg" style="width:100%">
-                        <a href="blank.html"<button class="button">Camps & Classes</button></a>
-                    </div>
-          
-          </div>
-            
+            <div class="row">
+                <div class="column">
+                    <img class='imgs' src="images/calen.jpg" style="width:100%">
+                    <a href="blank.html" <button class="button">Calendar</button></a>
+                </div>
+
+                <div class="column">
+                    <img class='imgs' src="images/food.jpg" style="width:100%">
+                    <a href="blank.html" <button class="button">Food</button></a>
+
+                </div>
+
+                <div class="column">
+                    <img class='imgs' src="images/camp.jpg" style="width:100%">
+                    <a href="blank.html" <button class="button">Camps & Classes</button></a>
+                </div>
+
+            </div>
+
             <!--footer layer-->
-          <div class="p-footer-inner">
+            <div class="p-footer-inner">
                 <!--create a footer-->
                 <footer class="p-footer">
                     <p>Authors: Group 14<br>
@@ -137,6 +137,7 @@
                 </footer>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 
 </html>
