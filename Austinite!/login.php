@@ -26,8 +26,10 @@ if (isset($_POST["login"]))   // it checks whether the user clicked login button
         }
 
         if ($good) {
-            setcookie('use', $_POST["user"], time() + 5);
+            setcookie('use', $_POST["user"], time() + 3600 * 12);
             echo '<script type="text/javascript"> window.open("blog.html","_self");</script>';
+            echo $_POST["user"];
+            echo "Logged in successfully!";
         } else {
             echo "<span style='color:red;text-align:center;'> Invalid Username or Password! </span>";
         }
