@@ -76,8 +76,30 @@
     </style>
 </head>
 
-<body>
+<style> 
+    #left {
+        float:left; 
+        background:lightblue;
+        width:25%;
+        height:280px;
+    }
+    #middle{
+        float:left; 
+        background:lightcoral;
+        width:50%;
+        height:280px;
+    }
+    #right{
+        float:right;
+        background:lightblue;
+        width:25%;
+        height:280px;
+    }
 
+</style> 
+
+<body>
+    
 
     <div class="p-home">
         <!--create a left and right layer for the website-->
@@ -111,22 +133,35 @@
             </div>
 
             <div class="row">
-                <div class="column">
-                    <img class='imgs' src="images/calen.jpg" style="width:100%">
-                    <a href="calendar.html" <button class="button">Calendar</button></a>
+                <p>Here is a list of restaurants to go</p>
+                <div name = "left">
+                <p>Ramen Tatsu-Ya</p>
+                
+                <img src="images/food1.jpeg" alt="ramen" style="width:400px;height:300px;">
+                <ul>
+                    <li>Various locations<br>
+                        Address One: 1600 E 6th St, Austin, TX 78702 <br>
+                        Address Two: 1234 S Lamar Blvd, Austin, TX 78704 <br>
+                        Address Three: 8557 Research Blvd #126, Austin, TX 78758</li>
+                    <li>Telephone: (512) 893-5561</li> 
+                </ul>
                 </div>
-
-                <div class="column">
-                    <img class='imgs' src="images/food.jpg" style="width:100%">
-                    <a href="food.html" <button class="button">Food</button></a>
-
+                <div name = "middle"> 
+                <p>Josephine House</p>
+                <img src="images/food2.jpeg" alt="breakfast" style="width:400px;height:300px;">
+                <ul>
+                    <li>Address: 1601 Waterston Ave, Austin, TX 78703 </li>
+                    <li>Telephone: (512) 477-5584</li> 
+                </ul>
                 </div>
-
-                <div class="column">
-                    <img class='imgs' src="images/camp.jpg" style="width:100%">
-                    <a href="classes.html" <button class="button">Camps & Classes</button></a>
+                <div name = "right">
+                <p>Royer’s Pie Haven</p>
+                <img src="images/food3.jpeg" alt="breakfast" style="width:400px;height:300px;">
+                <ul>
+                    <li>Address: 190 Henkel Circle, Round Top, TX 78954 </li>
+                    <li>Telephone: (979) 249-5282</li> 
+                </ul>
                 </div>
-
             </div>
 
             <!--footer layer-->

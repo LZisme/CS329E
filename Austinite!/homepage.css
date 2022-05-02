@@ -165,3 +165,22 @@ html {
 	  display: block;
 	}
 }
+
+#left {
+	float:left; 
+	background:lightblue;
+	width:25%;
+	height:280px;
+}
+#middle{
+	float:left; 
+	background:lightcoral;
+	width:50%;
+	height:280px;
+}
+#right{
+	float:right;
+	background:lightblue;
+	width:25%;
+	height:280px;
+}
