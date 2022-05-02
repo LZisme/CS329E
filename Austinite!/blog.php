@@ -1,3 +1,12 @@
+<?php
+if (!isset($_COOKIE['use']))
+{
+    header("Location: login.php");
+    die();
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -117,7 +126,7 @@
           <li><a href="index.html">Homepage</a></li>
           <li><a href="upcoming_events.html">Upcoming Events</a></li>
           <li><a href="things.html">Things To Do</a></li>
-          <li><a class="active" href="blog.html">Blog</a></li>
+          <li><a class="active" href="blog.php">Blog</a></li>
           <li><a href="suggestions.html">Suggestions</a></li>
           <li><a href="contact_us.html">Contact Us</a></li>
           <li style="float:right"><a href="login.php">Log In</a></li>
@@ -172,6 +181,7 @@
       
       <!-- php --> 
       <?php
+      
       $posts = file('./blog.txt');
       $l_array = array();
       foreach ($posts as $post) {

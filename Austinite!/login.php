@@ -3,7 +3,7 @@
 if (isset($_COOKIE['use']))   // Checking whether the session is already there or not if 
 // true then header redirect it to the home page directly 
 {
-    header("Location:blog.html");
+    header("Location:blog.php");
 } else {
     include "login.html";
 }
@@ -26,8 +26,8 @@ if (isset($_POST["login"]))   // it checks whether the user clicked login button
         }
 
         if ($good) {
-            setcookie('use', $_POST["user"], time() + 3600 * 12);
-            echo '<script type="text/javascript"> window.open("blog.html","_self");</script>';
+            setcookie('use', $_POST["user"], time() + 30);
+            echo '<script type="text/javascript"> window.open("blog.php","_self");</script>';
             echo $_POST["user"];
             echo "Logged in successfully!";
         } else {
