@@ -4,6 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="homepage.css">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "things.js"></script>
 
     <style>
         * {
@@ -36,12 +38,22 @@
             padding: 0 8px;
         }
 
+
+
         /* Images  */
         .imgs {
             background-color: #aaa;
             width: 100%;
             height: 400px;
             padding: 20px;
+        }
+
+        .specialImgs {
+            background-color: red;
+            width: 120%;
+            height: 400px;
+            padding: 20px;
+            border: pink;
         }
 
         /* Add a card effect for articles */
@@ -108,22 +120,23 @@
 
             <div class="header">
                 <h2>Things To Do </h2>
+                <h3><button onclick="loadFunction()" id = "thisButton">Help me select a category</button></h3>
             </div>
 
             <div class="row">
-                <div class="column">
-                    <img class='imgs' src="images/calen.jpg" style="width:100%">
+                <div class="column" >
+                    <img class='imgs' id = "part1"src="images/calen.jpg" style="width:100%">
                     <a href="calendar.html" <button class="button">Calendar</button></a>
                 </div>
 
-                <div class="column">
-                    <img class='imgs' src="images/food.jpg" style="width:100%">
+                <div class="column" >
+                    <img class='imgs' id = "part2" src="images/food.jpg" style="width:100%">
                     <a href="food.html" <button class="button">Food</button></a>
 
                 </div>
 
                 <div class="column">
-                    <img class='imgs' src="images/camp.jpg" style="width:100%">
+                    <img class='imgs' id = "part3" src="images/camp.jpg" style="width:100%">
                     <a href="classes.html" <button class="button">Camps & Classes</button></a>
                 </div>
 
