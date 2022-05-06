@@ -4,6 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="homepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="things.js"></script>
 
     <style>
         * {
@@ -36,12 +38,57 @@
             padding: 0 8px;
         }
 
+        /* CSS */
+        #thisButton {
+            background: #FF4742;
+            border: 1px solid #FF4742;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 16px;
+            min-height: 40px;
+            outline: 0;
+            padding: 12px 14px;
+            text-align: center;
+            text-rendering: geometricprecision;
+            text-transform: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+        }
+
+        #thisButton:hover,
+        #thisButton:active {
+            background-color: initial;
+            background-position: 0 0;
+            color: #FF4742;
+        }
+
+        #thisButton:active {
+            opacity: .5;
+        }
+
         /* Images  */
         .imgs {
             background-color: #aaa;
             width: 100%;
             height: 400px;
             padding: 20px;
+        }
+
+        .specialImgs {
+            background-color: red;
+            width: 120%;
+            height: 400px;
+            padding: 20px;
+            border: pink;
         }
 
         /* Add a card effect for articles */
@@ -108,22 +155,23 @@
 
             <div class="header">
                 <h2>Things To Do </h2>
+                <button onclick="loadFunction()" id="thisButton">Help me select a category</button>
             </div>
 
             <div class="row">
                 <div class="column">
-                    <img class='imgs' src="images/calen.jpg" style="width:100%">
+                    <img class='imgs' id="part1" src="images/calen.jpg" style="width:100%">
                     <a href="calendar.html" <button class="button">Calendar</button></a>
                 </div>
 
                 <div class="column">
-                    <img class='imgs' src="images/food.jpg" style="width:100%">
+                    <img class='imgs' id="part2" src="images/food.jpg" style="width:100%">
                     <a href="food.html" <button class="button">Food</button></a>
 
                 </div>
 
                 <div class="column">
-                    <img class='imgs' src="images/camp.jpg" style="width:100%">
+                    <img class='imgs' id="part3" src="images/camp.jpg" style="width:100%">
                     <a href="classes.html" <button class="button">Camps & Classes</button></a>
                 </div>
 

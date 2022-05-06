@@ -46,6 +46,19 @@
       padding: 20px;
     }
   </style>
+
+<script>
+  function validateForm() {
+      let first = document.forms["suggestions"]["firstname"].value;
+      let last = document.forms["suggestions"]["lastname"].value;
+      let subject = document.forms["suggestions"]["subject"].value;
+      if (first == "" || last == "" || subect == "") {
+          alert("Please fill out all forms!");
+          return false;
+      }
+  }
+</script>
+
 </head>
 
 <body>
@@ -81,12 +94,12 @@
       <h3>Contact Form</h3>
 
       <div class="container">
-        <form action="suggestion.php" method="get">
+        <form action="suggestion.php" method="get" name="suggestions" onsubmit="return validateForm()">
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." >
 
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." >
 
           <label for="country">Country</label>
           <select id="country" name="country">
@@ -104,7 +117,7 @@
           </select>
 
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" ></textarea>
 
           <input type="submit" value="Submit">
         </form>

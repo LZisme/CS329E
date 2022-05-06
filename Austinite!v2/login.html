@@ -49,6 +49,17 @@
         }
     </style>
 
+    <script>
+        function validateForm() {
+            let user = document.forms["login"]["user"].value;
+            let pass = document.forms["login"]["pass"].value;
+            if (user == "" || pass == "") {
+                alert("Please fill out all forms");
+                return false;
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -80,17 +91,17 @@
                 </ul>
             </div>
 
-            <form action="" method="post">
+            <form action="" method="post" name="login" onsubmit="return validateForm()">
                 <div class="container">
                     <h1>Sign In</h1>
                     <p>Please sign in.</p>
                     <hr>
 
                     <label><b>Username</b></label>
-                    <input type="text" placeholder="Username" name="user" size="20" required>
+                    <input type="text" placeholder="Username" name="user" size="20">
 
                     <label><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="pass" size="20" required>
+                    <input type="password" placeholder="Enter Password" name="pass" size="20">
 
                     <div class="clearfix">
                         <input id="login" name="login" type="submit" value="Login" />
